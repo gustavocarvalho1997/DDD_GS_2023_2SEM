@@ -140,7 +140,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\gusta\OneDrive\Área de Trabalho\GS_DDD\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\gusta\OneDrive\Área de Trabalho\GS_DDD\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\GSApi" path="/GSApi" reloadable="true" source="org.eclipse.jst.jee.server:GSApi"/></Host>
+      <Context docBase="C:\Users\gusta\OneDrive\Área de Trabalho\Nova pasta\DDD_GS_2023_2SEM\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\gusta\OneDrive\Área de Trabalho\Nova pasta\DDD_GS_2023_2SEM\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\GSApi" path="/GSApi" reloadable="true" source="org.eclipse.jst.jee.server:GSApi"/></Host>
     </Engine>
   </Service>
 </Server>
