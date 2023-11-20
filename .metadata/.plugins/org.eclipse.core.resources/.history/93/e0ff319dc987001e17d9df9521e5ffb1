@@ -1,0 +1,6 @@
+package br.com.fiap.gs2sem.utils;
+
+public final class RecomendacaoUtils {
+	private RecomendacaoUtils() {
+	}
+}//CLASS

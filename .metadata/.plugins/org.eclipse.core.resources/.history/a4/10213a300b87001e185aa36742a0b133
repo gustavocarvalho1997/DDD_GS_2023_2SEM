@@ -1,0 +1,9 @@
+package br.com.fiap.gs2sem.models;
+
+public final class Bairro {
+	// Atributos
+	private int id;
+	private Cidade cidade;
+	private String nome;
+	private String zona;
+}//CLASS

@@ -1,0 +1,8 @@
+package br.com.fiap.gs2sem.models;
+
+public final class Estado {
+	//Atributos
+	private int id;
+	private String sigla;
+	private String nome;
+}//CLASS

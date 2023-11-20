@@ -1,0 +1,10 @@
+package br.com.fiap.gs2sem.models;
+
+public final class Laboratorio {
+	// Atributos
+	private int id;
+	private String nome;
+	private String telefone;
+	
+	
+}//CLASS

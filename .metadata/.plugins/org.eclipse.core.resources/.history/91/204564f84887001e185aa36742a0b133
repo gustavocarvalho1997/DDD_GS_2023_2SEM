@@ -1,0 +1,17 @@
+package br.com.fiap.gs2sem.service;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import br.com.fiap.gs2sem.dao.LaboratorioDao;
+import br.com.fiap.gs2sem.factory.ConnectionFactory;
+
+public final class LaboratorioService {
+	// Atributos
+	private LaboratorioDao laboratorioDao;
+	// Construtor
+	public LaboratorioService() throws ClassNotFoundException, SQLException {
+		Connection conn = ConnectionFactory.getConnection();
+		laboratorioDao = new LaboratorioDao(conn);
+	}
+}//CLASS

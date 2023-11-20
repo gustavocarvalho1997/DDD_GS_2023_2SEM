@@ -1,0 +1,14 @@
+package br.com.fiap.gs2sem.dao;
+
+import java.sql.Connection;
+
+public final class PacienteDao {
+	// Atributos
+	private Connection conn;
+	// Statements
+	private static final String AUTH = "SELECT * FROM T_OBS_PACIENTE WHERE DS_EMAIL = ? AND DS_SENHA = ?";
+	// Construtor
+	public PacienteDao(Connection conn) {
+		this.conn = conn;
+	}
+}// CLASS

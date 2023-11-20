@@ -1,0 +1,14 @@
+package br.com.fiap.gs2sem.resource;
+
+import br.com.fiap.gs2sem.service.LaboratorioService;
+import jakarta.ws.rs.Path;
+
+@Path("/laboratorio")
+public final class LaboratorioResource {
+	// Atributos
+	private LaboratorioService service;
+	// Construtor
+	public LaboratorioResource() {
+		service = new LaboratorioService();
+	}
+}//CLASS

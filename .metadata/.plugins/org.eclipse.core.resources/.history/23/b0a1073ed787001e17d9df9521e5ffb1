@@ -1,0 +1,29 @@
+package br.com.fiap.gs2sem.resource;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import br.com.fiap.gs2sem.models.Recomendacao;
+import br.com.fiap.gs2sem.service.RecomendacaoService;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+
+@Path("/recomendacao")
+public final class RecomendacaoResource {
+	// Atributos
+	private RecomendacaoService service;
+	
+	// Construtor
+	public RecomendacaoResource() throws ClassNotFoundException, SQLException {
+		service = new RecomendacaoService();
+	}
+	
+	// Listar INICIO
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public List<Recomendacao> listar() throws SQLException {
+		return service.listar();
+	}
+}//CLASS

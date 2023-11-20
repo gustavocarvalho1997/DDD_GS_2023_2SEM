@@ -1,0 +1,17 @@
+package br.com.fiap.gs2sem.resource;
+
+import java.sql.SQLException;
+
+import br.com.fiap.gs2sem.service.EnderecoPacienteService;
+import jakarta.ws.rs.Path;
+
+@Path("/paciente/endereco")
+public final class EnderecoPacienteResource {
+	// Atributo
+	private EnderecoPacienteService service;
+	
+	// Construtor
+	public EnderecoPacienteResource() throws ClassNotFoundException, SQLException {
+		service = new EnderecoPacienteService();
+	}
+}//CLASS

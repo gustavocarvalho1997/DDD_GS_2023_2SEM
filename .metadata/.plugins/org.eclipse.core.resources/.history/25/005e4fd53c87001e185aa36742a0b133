@@ -1,0 +1,41 @@
+package br.com.fiap.gs2sem.utils;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import br.com.fiap.gs2sem.models.Endereco;
+
+public final class EnderecoUtils {
+	// PARSE INICIO
+		public static Endereco parse(ResultSet rs) throws SQLException {
+			int idEndereco = rs.getInt("ID_ENDERECO");
+			int idLogradouro = rs.getInt("ID_LOGRADOURO");
+			int numeroLogradouro = rs.getInt("NR_LOGRADOURO");
+			String complemento = rs.getString("DS_NUM_COMPLEMENTO");
+			String referencia = rs.getString("DS_PONTO_REFERENCIA");
+			int idBairro = rs.getInt("ID_BAIRRO");
+			String nomeLogradouro = rs.getString("NM_LOGRADOURO");
+			long cep = rs.getInt("NR_CEP");
+			int idCidade = rs.getInt("ID_CIDADE");
+			String nomeBairro = rs.getString("NM_BAIRRO");
+			String zona = rs.getString("NM_ZONA");
+			int idEstado = rs.getInt("ID_ESTADO");
+			String nomeCidade = rs.getString("NM_CIDADE");
+			int ddd = rs.getInt("NR_DDD");
+			String siglaEstado = rs.getString("SG_ESTADO");
+			String nomeEstado = rs.getString("NM_ESTADO");
+			
+			Estado estado = new Estado(idEstado, siglaEstado, nomeEstado, dataCadastroEstado);
+			Cidade cidade = new Cidade(idCidade, estado, nomeCidade, ddd, dataCadastroCidade);
+			Bairro bairro = new Bairro(idBairro, cidade, nomeBairro, zona, dataCadastroBairro);
+			Logradouro logradouro =  new Logradouro(idLogradouro, bairro, nomeLogradouro, cep, dataCadastroLogradouro);
+			Endereco endereco = new Endereco(idEndereco, numeroLogradouro, dataCadastroEndereco, logradouro);
+			if(complemento != null) {
+				endereco.setComplemento(complemento);
+			}
+			if(referencia != null) {
+				endereco.setReferencia(referencia);
+			}
+			return endereco;
+		}//PARSE FIM
+}//CLASS

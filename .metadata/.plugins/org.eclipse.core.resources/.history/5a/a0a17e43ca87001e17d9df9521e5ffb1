@@ -1,0 +1,14 @@
+package br.com.fiap.gs2sem.dao;
+
+import java.sql.Connection;
+
+public final class ResultadoDao {
+	// Atributos
+	private Connection conn;
+	// Statements
+	private static final String LISTAR = "SELECT * FROM T_OBS_RESULTADO ORDER BY ID_RESULTADO";
+	// Construtor
+	public ResultadoDao(Connection conn) {
+		this.conn = conn;
+	}
+}//CLASS

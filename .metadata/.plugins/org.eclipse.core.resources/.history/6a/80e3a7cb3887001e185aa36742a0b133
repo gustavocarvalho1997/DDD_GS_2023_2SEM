@@ -1,0 +1,36 @@
+package br.com.fiap.gs2sem.resource;
+
+import java.sql.SQLException;
+
+import br.com.fiap.gs2sem.exception.InvalidCredentialsException;
+import br.com.fiap.gs2sem.service.PacienteService;
+import br.com.fiap.gs2sem.utils.AuthUtils;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.HeaderParam;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+
+@Path("/paciente/auth")
+public final class PacienteResource {
+	// Atributos
+	private PacienteService service;
+	
+	// Construtor
+	public PacienteResource() throws ClassNotFoundException, SQLException {
+		service = new PacienteService();
+	}
+	
+	// Autenticar INICIO
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response autenticar(@HeaderParam("authorization") String authString) {
+		try {
+			String[] credentials = AuthUtils.decodeAuth(authString);
+			return Response.ok(service.autenticar(credentials[0], credentials[1])).build();
+		} catch (InvalidCredentialsException e) {
+			// TODO: handle exception
+		}
+	}
+}//CLASS

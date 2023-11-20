@@ -1,0 +1,17 @@
+package br.com.fiap.gs2sem.utils;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import br.com.fiap.gs2sem.models.Paciente;
+
+public final class PacienteUtils {
+	private PacienteUtils() {
+	}
+	
+	// INICIO PARSE
+	public static Paciente parse(ResultSet rs) throws SQLException {
+		int id = rs.getInt("ID_PACIENTE");
+		char sexo = rs.getString("FL_SEXO_BIOLOGICO")[0];
+	}
+}//CLASS

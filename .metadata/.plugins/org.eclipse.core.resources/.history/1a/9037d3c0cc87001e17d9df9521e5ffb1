@@ -1,0 +1,10 @@
+package br.com.fiap.gs2sem.dao;
+
+import java.sql.Connection;
+
+public final class RecomendacaoDao {
+	// Atributos
+	private Connection conn;
+	// Statements
+	private static final String LISTAR = "SELECT * FROM T_OBS_RECOMENDACAO ORDER BY ID_RECOMENDACAO";
+}//CLASS

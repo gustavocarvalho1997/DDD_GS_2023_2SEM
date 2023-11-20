@@ -1,0 +1,9 @@
+package br.com.fiap.gs2sem.models;
+
+public final class Recomendacao {
+	// Atributos
+	private int id;
+	private String recomendacao;
+	private Resultado resultado;
+	
+}//CLASS

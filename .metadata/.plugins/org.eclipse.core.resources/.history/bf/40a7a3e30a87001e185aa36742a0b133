@@ -1,0 +1,9 @@
+package br.com.fiap.gs2sem.models;
+
+public final class Cidade {
+	// Atributos
+	private int id;
+	private Estado estado;
+	private String nome;
+	private int ddd;
+}//CLASS

@@ -1,0 +1,24 @@
+package br.com.fiap.gs2sem.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.util.List;
+
+import br.com.fiap.gs2sem.models.Recomendacao;
+
+public final class RecomendacaoDao {
+	// Atributos
+	private Connection conn;
+	// Statements
+	private static final String LISTAR = "SELECT * FROM T_OBS_RECOMENDACAO ORDER BY ID_RECOMENDACAO";
+
+	// Construtor
+	public RecomendacaoDao(Connection conn) {
+		this.conn = conn;
+	}
+	
+	// Listar INICIO
+	public List<Recomendacao> listar() {
+		PreparedStatement stm = conn.prepareStatement(LISTAR);
+	}
+}//CLASS

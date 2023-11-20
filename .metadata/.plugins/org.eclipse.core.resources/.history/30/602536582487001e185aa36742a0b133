@@ -1,0 +1,18 @@
+package br.com.fiap.gs2sem.service;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import br.com.fiap.gs2sem.dao.TipoExameDao;
+import br.com.fiap.gs2sem.factory.ConnectionFactory;
+
+public final class TipoExameService {
+	// Atributos
+	private TipoExameDao tipoExameDao;
+	
+	// Construtor
+	public TipoExameService() throws SQLException, ClassNotFoundException {
+		Connection conn = ConnectionFactory.getConnection();
+		tipoExameDao = new TipoExameDao(conn);
+	}
+}//CLASS

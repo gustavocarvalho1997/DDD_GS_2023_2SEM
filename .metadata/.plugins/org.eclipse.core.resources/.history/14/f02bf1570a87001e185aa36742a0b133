@@ -1,0 +1,22 @@
+package br.com.fiap.gs2sem.models;
+
+public final class Estado {
+	//Atributos
+	private int id;
+	private String sigla;
+	private String nome;
+	
+	// Construtores
+	public Estado(int id, String sigla, String nome) {
+		super();
+		this.id = id;
+		this.sigla = sigla;
+		this.nome = nome;
+	}
+	public Estado() {
+		super();
+	}
+	
+	// Getters
+	
+}//CLASS

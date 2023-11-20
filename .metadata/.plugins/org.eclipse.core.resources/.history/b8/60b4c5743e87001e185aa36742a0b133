@@ -1,0 +1,19 @@
+package br.com.fiap.gs2sem.service;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import br.com.fiap.gs2sem.dao.EnderecoPacienteDao;
+import br.com.fiap.gs2sem.dao.PacienteDao;
+import br.com.fiap.gs2sem.factory.ConnectionFactory;
+
+public final class EnderecoPacienteService {
+	// Atributos
+	private EnderecoPacienteDao enderecoPacienteDao;
+	private PacienteDao pacienteDao;
+	// Construtor
+	public EnderecoPacienteService() throws ClassNotFoundException, SQLException {
+		Connection conn = ConnectionFactory.getConnection();
+		enderecoPacienteDao = new EnderecoPacienteDao(conn);
+	}
+}//CLASS

@@ -1,0 +1,5 @@
+package br.com.fiap.gs2sem.models;
+
+public class Logradouro {
+
+}

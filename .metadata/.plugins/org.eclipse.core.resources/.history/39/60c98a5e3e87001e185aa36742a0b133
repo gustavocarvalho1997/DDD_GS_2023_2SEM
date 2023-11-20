@@ -1,0 +1,8 @@
+package br.com.fiap.gs2sem.service;
+
+import br.com.fiap.gs2sem.dao.EnderecoPacienteDao;
+
+public final class EnderecoPacienteService {
+	// Atributos
+	private EnderecoPacienteDao enderecoPacienteDao;
+}//CLASS

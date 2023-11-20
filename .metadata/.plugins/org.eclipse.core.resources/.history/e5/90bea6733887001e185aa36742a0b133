@@ -1,0 +1,15 @@
+package br.com.fiap.gs2sem.resource;
+
+import br.com.fiap.gs2sem.service.PacienteService;
+import jakarta.ws.rs.Path;
+
+@Path("/paciente/auth")
+public final class PacienteResource {
+	// Atributos
+	private PacienteService service;
+	
+	// Construtor
+	public PacienteResource() {
+		service = new PacienteService();
+	}
+}//CLASS

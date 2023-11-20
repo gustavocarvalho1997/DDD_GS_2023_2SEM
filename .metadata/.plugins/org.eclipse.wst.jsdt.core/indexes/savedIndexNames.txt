@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\gusta\OneDrive\Área de Trabalho\GS_DDD\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1747446716.index
+2151198106.index
+475409517.index
+2095257257.index
+2481720007.index
+1661880805.index

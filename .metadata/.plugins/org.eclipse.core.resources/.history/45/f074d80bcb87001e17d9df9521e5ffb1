@@ -1,0 +1,8 @@
+package br.com.fiap.gs2sem.resource;
+
+import jakarta.ws.rs.Path;
+
+@Path("/resultados")
+public final class ResultadoResource {
+
+}//CLASS

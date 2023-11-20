@@ -1,0 +1,36 @@
+package br.com.fiap.gs2sem.models;
+
+import java.time.LocalDate;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+public final class Exame {
+	// Atributos
+	private int id;
+	private String especializacao;
+	@JsonFormat(pattern = "dd/MM/yyyy", shape = JsonFormat.Shape.STRING)
+	private LocalDate dataRealização;
+	private Laboratorio laboratorio;
+	private TipoExame tipo;
+	private Paciente paciente;
+	
+	// Construtores
+	public Exame(int id, String especializacao, LocalDate dataRealização, Laboratorio laboratorio, TipoExame tipo,
+			Paciente paciente) {
+		super();
+		this.id = id;
+		this.especializacao = especializacao;
+		this.dataRealização = dataRealização;
+		this.laboratorio = laboratorio;
+		this.tipo = tipo;
+		this.paciente = paciente;
+	}
+	public Exame(int id) {
+		super();
+		this.id = id;
+	}
+	public Exame() {
+		super();
+	}
+	
+}//CLASS

@@ -1,0 +1,16 @@
+package br.com.fiap.gs2sem.service;
+
+import java.sql.Connection;
+
+import br.com.fiap.gs2sem.dao.RecomendacaoDao;
+import br.com.fiap.gs2sem.factory.ConnectionFactory;
+
+public final class RecomendacaoService {
+	// Atributos
+	private RecomendacaoDao recomendacaoDao;
+	
+	// Construtor
+	public RecomendacaoService() {
+		Connection conn = ConnectionFactory.getConnection();
+	}
+}//CLASS

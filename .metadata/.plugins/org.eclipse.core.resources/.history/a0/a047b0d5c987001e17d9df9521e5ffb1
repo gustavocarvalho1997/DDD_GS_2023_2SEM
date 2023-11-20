@@ -1,0 +1,23 @@
+package br.com.fiap.gs2sem.utils;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import br.com.fiap.gs2sem.models.Recomendacao;
+import br.com.fiap.gs2sem.models.Resultado;
+
+public final class RecomendacaoUtils {
+	private RecomendacaoUtils() {
+	}
+	
+	// PARSE INICIO
+		public static Recomendacao parse(ResultSet rs) throws SQLException {
+			int id = rs.getInt("ID_RECOMENDACAO");
+			String recomendacao = rs.getString("DS_RECOMENDACAO");
+			int idResultado = rs.getInt("ID_RESULTADO");
+			
+			Recomendacao recom = new Recomendacao(id, recomendacao, new Resultado(idResultado));
+			
+			return recom;
+		}// PARSE FIM
+}//CLASS

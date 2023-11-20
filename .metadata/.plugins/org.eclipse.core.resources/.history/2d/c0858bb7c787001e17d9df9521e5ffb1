@@ -1,0 +1,25 @@
+package br.com.fiap.gs2sem.models;
+
+public final class Resultado {
+	// Atributos
+	private int id;
+	private String classificacao;
+	private double p1;
+	private double p2;
+	private double p3;
+	private double p4;
+	private double p5;
+	private double p6;
+	private double p7;
+	private double p8;
+	private double p9;
+	private double p10;
+	private double p11;
+	private double p12;
+	private double p13;
+	private double p14;
+	private double p15;
+	private double p16;
+	private double p17;
+	private Exame exame;
+}//CLASS

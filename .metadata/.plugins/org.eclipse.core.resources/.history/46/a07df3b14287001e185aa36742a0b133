@@ -1,0 +1,20 @@
+package br.com.fiap.gs2sem.utils;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import br.com.fiap.gs2sem.models.Endereco;
+import br.com.fiap.gs2sem.models.Laboratorio;
+
+public final class LaboratorioUtils {
+	private LaboratorioUtils() {
+	}
+	
+	// PARSE INICIO
+	public static Laboratorio parse(ResultSet rs) throws SQLException {
+		Endereco endereco = EnderecoUtils.parse(rs);
+		
+		
+		return null;
+	}
+}//CLASS

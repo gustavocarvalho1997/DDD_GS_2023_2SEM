@@ -1,0 +1,20 @@
+package br.com.fiap.gs2sem.models;
+
+import java.time.LocalDate;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+public final class Paciente {
+	// Atributos
+	private int id;
+	private Endereco endereco;
+	private char sexo;
+	@JsonFormat(pattern = "dd/MM/yyyy", shape = JsonFormat.Shape.STRING)
+	private LocalDate dataNascimento;
+	private String email;
+	private String nome;
+	private String senha;
+	private String tipoSanguineo;
+	private double altura;
+	private double peso;
+}//CLASS

@@ -1,0 +1,9 @@
+package br.com.fiap.gs2sem.models;
+
+public final class Endereco {
+	// Atributos
+	private int id;
+	private Logradouro logradouro;
+	private int numero;
+	private String complemento;
+}//CLASS

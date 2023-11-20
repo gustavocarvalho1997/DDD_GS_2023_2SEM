@@ -1,0 +1,7 @@
+package br.com.fiap.gs2sem.exception;
+
+public final class BadInfoException extends Exception{
+	public BadInfoException(String message) {
+		super(message);
+	}
+}//CLASS

@@ -1,0 +1,29 @@
+package br.com.fiap.gs2sem.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import br.com.fiap.gs2sem.models.TipoExame;
+
+public final class TipoExameDao {
+	// Atributos
+	private Connection conn;
+	// Statements
+	private static final String LISTAR = "SELECT * FROM T_OBS_TIPO ORDER BY ID_TIPO";
+	private static final String PESQ_ID = "SELECT * FROM T_OBS_TIPO WHERE ID_TIPO = ?";
+	// Construtor
+	public TipoExameDao(Connection conn) {
+		this.conn = conn;
+	}
+	
+	// Listar INICIO
+	public List<TipoExame> listar() throws SQLException {
+		PreparedStatement stm = conn.prepareStatement(LISTAR);
+		ResultSet rs = stm.executeQuery();
+		List<TipoExame> lista = new ArrayList<>();
+	}
+}// CLASS

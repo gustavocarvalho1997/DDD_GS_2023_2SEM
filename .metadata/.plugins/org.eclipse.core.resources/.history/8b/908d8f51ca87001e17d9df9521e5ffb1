@@ -1,0 +1,24 @@
+package br.com.fiap.gs2sem.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import br.com.fiap.gs2sem.models.Resultado;
+
+public final class ResultadoDao {
+	// Atributos
+	private Connection conn;
+	// Statements
+	private static final String LISTAR = "SELECT * FROM T_OBS_RESULTADO ORDER BY ID_RESULTADO";
+	// Construtor
+	public ResultadoDao(Connection conn) {
+		this.conn = conn;
+	}
+	
+	// Listar INICIO
+	public List<Resultado> listar() throws SQLException {
+		PreparedStatement stm = conn.prepareStatement(LISTAR);
+	}
+}//CLASS

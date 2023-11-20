@@ -1,0 +1,22 @@
+package br.com.fiap.gs2sem.service;
+
+import java.sql.Connection;
+
+import br.com.fiap.gs2sem.dao.PacienteDao;
+import br.com.fiap.gs2sem.factory.ConnectionFactory;
+
+public final class PacienteService {
+	// Atributos
+	private PacienteDao pacienteDao;
+	
+	// Construtor
+	public PacienteService() {
+		Connection conn = ConnectionFactory.getConnection();
+		pacienteDao = new PacienteDao(conn);
+	}
+	
+	// Autenticar INICIO
+	public Paciente autenticar(String email, String senha) {
+		return pacienteDao.autenticar(email, senha);
+	} // Autenticar FIM
+}//CLASS

@@ -1,0 +1,17 @@
+package br.com.fiap.gs2sem.resource;
+
+import java.sql.SQLException;
+
+import br.com.fiap.gs2sem.service.TipoExameService;
+import jakarta.ws.rs.Path;
+
+@Path("/tipoExame")
+public final class TipoExameResource {
+	// Atributo
+	private TipoExameService service;
+	
+	// Construtor
+	public TipoExameResource() throws ClassNotFoundException, SQLException {
+		service = new TipoExameService();
+	}
+}//CLASS

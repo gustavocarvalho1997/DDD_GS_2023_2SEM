@@ -1,0 +1,7 @@
+package br.com.fiap.gs2sem.models;
+
+public final class TipoExame {
+	// Atributos
+	private int id;
+	private String nome;
+}//CLASS

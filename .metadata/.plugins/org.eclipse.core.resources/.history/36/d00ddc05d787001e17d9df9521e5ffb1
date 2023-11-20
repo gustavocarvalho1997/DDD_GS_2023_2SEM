@@ -1,0 +1,15 @@
+package br.com.fiap.gs2sem.resource;
+
+import br.com.fiap.gs2sem.service.RecomendacaoService;
+import jakarta.ws.rs.Path;
+
+@Path("/recomendacao")
+public final class RecomendacaoResource {
+	// Atributos
+	private RecomendacaoService service;
+	
+	// Construtor
+	public RecomendacaoResource() {
+		service = new RecomendacaoService();
+	}
+}//CLASS

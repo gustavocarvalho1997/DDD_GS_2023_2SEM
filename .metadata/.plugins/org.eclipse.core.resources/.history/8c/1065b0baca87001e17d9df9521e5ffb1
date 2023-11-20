@@ -1,0 +1,17 @@
+package br.com.fiap.gs2sem.service;
+
+import java.sql.Connection;
+
+import br.com.fiap.gs2sem.dao.ResultadoDao;
+import br.com.fiap.gs2sem.factory.ConnectionFactory;
+
+public final class ResultadoService {
+	// Atributos
+	private ResultadoDao resultadoDao;
+	
+	// Construtor
+	public ResultadoService() {
+		Connection conn = ConnectionFactory.getConnection();
+		resultadoDao = new ResultadoDao(conn);
+	}
+}//CLASS
