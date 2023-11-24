@@ -30,6 +30,7 @@ Descrição: Retorna o endereço de acordo com o ID fornecido, e verifica tambem
 Precisa de credenciais (email, senha): SIM.
 
 
+
 Verbo: GET
 
 Endpoint: http://localhost:8080/GSApi/api/laboratorio
@@ -37,6 +38,7 @@ Endpoint: http://localhost:8080/GSApi/api/laboratorio
 Descrição: Retorna uma lista com todos os laboratórios cadastrados.
 
 Precisa de credenciais (email, senha): NÃO.
+
 
 
 Verbo: GET
@@ -48,6 +50,7 @@ Descrição: Retorna o laboratório do id informado.
 Precisa de credenciais (email, senha): NÃO.
 
 
+
 Verbo: GET
 
 Endpoint: http://localhost:8080/GSApi/api/paciente/auth
@@ -55,6 +58,7 @@ Endpoint: http://localhost:8080/GSApi/api/paciente/auth
 Descrição: Retorna o paciente de acordo com as credenciais fornecidas.
 
 Precisa de credenciais (email, senha): SIM.
+
 
 
 Verbo: PUT
@@ -66,6 +70,7 @@ Descrição: Permite fazer a alteração da senha cadastrada do usuário.
 Precisa de credenciais (email, senha): SIM.
 
 
+
 Verbo: GET
 
 Endpoint: http://localhost:8080/GSApi/api/resultados
@@ -73,6 +78,7 @@ Endpoint: http://localhost:8080/GSApi/api/resultados
 Descrição: Retorna uma lista com todos os resultados da tabela.
 
 Precisa de credenciais (email, senha): NÃO.
+
 
 
 Verbo: GET
@@ -84,6 +90,7 @@ Descrição: Retorna uma lista com todos os tipos de exames.
 Precisa de credenciais (email, senha): NÃO.
 
 
+
 Verbo: GET
 
 Endpoint: http://localhost:8080/GSApi/api/tipoExame/{id}
@@ -91,6 +98,7 @@ Endpoint: http://localhost:8080/GSApi/api/tipoExame/{id}
 Descrição: Retorna o tipo de exame referente a esse id.
 
 Precisa de credenciais (email, senha): NÃO.
+
 
 
 Verbo: GET
@@ -102,6 +110,7 @@ Descrição: Retorna uma lista com todas as recomendações.
 Precisa de credenciais (email, senha): NÃO.
 
 
+
 Verbo: GET
 
 Endpoint: http://localhost:8080/GSApi/api/recomendacao/{id}
@@ -109,6 +118,7 @@ Endpoint: http://localhost:8080/GSApi/api/recomendacao/{id}
 Descrição: Retorna a recomendação referente a esse id.
 
 Precisa de credenciais (email, senha): NÃO.
+
 
 
 Verbo: POST
@@ -120,6 +130,7 @@ Descrição: Permite cadastrar uma recomendação.
 Precisa de credenciais (email, senha): NÃO.
 
 
+
 Verbo: DELETE
 
 Endpoint: http://localhost:8080/GSApi/api/recomendacao/{id}
@@ -127,6 +138,7 @@ Endpoint: http://localhost:8080/GSApi/api/recomendacao/{id}
 Descrição: Permite deletar uma recomendação conforme id informado.
 
 Precisa de credenciais (email, senha): NÃO.
+
 
 
 Verbo: PUT
